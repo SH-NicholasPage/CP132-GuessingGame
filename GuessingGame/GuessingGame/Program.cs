@@ -3,6 +3,7 @@
 * South Hills Username: [YOUR SOUTH HILLS USERNAME HERE]
 */
 #pragma warning disable CS8600
+#pragma warning disable CS8604
 using System;
 
 namespace GuessingGame
@@ -12,12 +13,12 @@ namespace GuessingGame
         //The random object is already defined for you here. You do not need to define another or redefine it.
         public static readonly Random random = new Random();
 
-        public static void Main()
+        static void Main()
         {
             //Examle code to help you get started
             //-----------------------------------------------------
-            //Prompt user for a numeric input
-            Console.Write("Enter a number: ");
+            //Prompt user for a numeric input by calling this method
+            ExampleMethod("Enter a number: ");
             /* Takes an input from the user and converts (parses) it to an integer.
              * Console.ReadLine() reads numbers as strings, so it must be converted. */
             String input = Console.ReadLine();
@@ -38,6 +39,13 @@ namespace GuessingGame
             //-----------------------------------------------------
 
             //TODO: Your code here (you can remove this comment)
+        }
+
+        //Ignore the static keyword for now
+        //The void keyword is the method's return type (void = nothing is returned)
+        static void ExampleMethod(String prompt)
+        {
+            Console.Write(prompt);
         }
     }
 }
