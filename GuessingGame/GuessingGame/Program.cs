@@ -10,9 +10,6 @@ namespace GuessingGame
 {
     public class Program
     {
-        //The random object is already defined for you here. You do not need to define another or redefine it.
-        public static readonly Random random = new Random();
-
         static void Main()
         {
             //Example code to help you get started
@@ -32,7 +29,7 @@ namespace GuessingGame
             num *= 2;
             /* Gets a random number between 0 and 10
              * The minimum bound is inclusive and the upper bound is exclusive (which is why it is 11 instead of 10) */
-            int rand = random.Next(0, 11);
+            int rand = Random.Shared.Next(0, 11);
 
             Console.WriteLine("Your number doubled is " + num);
             Console.WriteLine("Random number generated: " + rand);
