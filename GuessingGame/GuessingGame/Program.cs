@@ -15,7 +15,7 @@ namespace GuessingGame
 
         static void Main()
         {
-            //Examle code to help you get started
+            //Example code to help you get started
             //-----------------------------------------------------
             //Prompt user for a numeric input by calling this method
             ExampleMethod("Enter a number: ");
@@ -31,7 +31,7 @@ namespace GuessingGame
             //Double the number (num = num * 2)
             num *= 2;
             /* Gets a random number between 0 and 10
-             * The minumum bound is inclusive and the upper bound is exclusive (which is why it is 11 instead of 10) */
+             * The minimum bound is inclusive and the upper bound is exclusive (which is why it is 11 instead of 10) */
             int rand = random.Next(0, 11);
 
             Console.WriteLine("Your number doubled is " + num);
